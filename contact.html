@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/dumbbell.png" rel="icon" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/7433d3320f.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-image: url(contact-bg.jpg); background-size: cover;">
+    <div class="nav">
+        <!-- Logo  -->
+        <h2><a href="index.html" id="title">The Muscle Factory</a></h2>
+        <!-- Nav Links  -->
+        <ul id="item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="contact.html">Enquire</a></li>
+
+            <div class="button">
+                <a class="border" href="login.html">Login</a>
+            </div>
+        </ul>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+    <div id="contact" class="contact">
+        <!-- First Section  -->
+        <div class="form" data-aos="fade-up">
+            <h2>Request an appointment</h2>
+            <br><br>
+            <div class="submit">
+                <form name="frmContact" method="post" action="contact.php">
+                <input type="text" name="txtName" placeholder="Name" />
+                <input type="email" name="txtEmail" placeholder="Email" />
+                <input type="text" name="txtPhone" placeholder="Phone number" />
+                <label for="type">Type of enquiry</label>
+                <select name="type" id="type">
+                    <option value="sub">Subscription</option>
+                    <option value="fac">Facility</option>
+                    <option value="time" selected>Timings</option>
+                    <option value="pt">Personal Trainer</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Message" name="txtMessage" cols="5" rows="5"></textarea>
+                <!-- <a href="#">Send Message</a>
+                 -->
+                <input type="submit" name="Submit" id="Submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+</body>
+
+</html>
